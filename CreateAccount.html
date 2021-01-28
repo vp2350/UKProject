@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Login Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./assets/styles/register.css" />
+
+    <script>
+      let dataValue;
+      // 1
+      window.onload = e => {
+        console.log(userName.value);
+        patient.classList.add('selected');
+        console.log(firebase);
+        partnerDiv.style.display = 'none';
+        adminDiv.style.display = 'none';
+        //pleaseCreateNew.style.display = "none";
+        //Get a reference to the databse
+        let database = firebase.database();
+
+        //Refer to a root node named `users`
+        let ref = database.ref('users');
+        firebase
+          .database()
+          .ref('users')
+          .on('value', dataChanged, firebaseError);
+
+        function dataChanged(data) {
+          console.log(data.val());
+          dataValue = data.val();
+        }
+
+        function firebaseError(error) {
+          console.log(error);
+        }
+
+        //UI SETUP
+        patient.onclick = _ => {
+          patient.classList.add('selected');
+          partner.classList.remove('selected');
+          admin.classList.remove('selected');
+          partnerDiv.style.display = 'none';
+          adminDiv.style.display = 'none';
+        };
+
+        partner.onclick = _ => {
+          patient.classList.remove('selected');
+          partner.classList.add('selected');
+          admin.classList.remove('selected');
+          partnerDiv.style.display = 'block';
+          adminDiv.style.display = 'none';
+        };
+
+        admin.onclick = _ => {
+          patient.classList.remove('selected');
+          partner.classList.remove('selected');
+          admin.classList.add('selected');
+          partnerDiv.style.display = 'none';
+          adminDiv.style.display = 'block';
+        };
+
+        submit.onclick = _ => {
+          let loginValue = userName.value;
+          if (userName.value != null && userName.value != "" && userName.value != 0) {
+            let path = 'users/' + loginValue;
+                firebase.database().ref(path).set({
+                  // over-writes old values
+                  userID: userName.value,
+                  firstName: firstName.value,
+                  lastName: lastName.value,
+            });
+            localStorage.setItem('loginId', loginValue);
+            window.location = 'home.html';
+          }
+
+        };
+
+        //createAccountButton.onclick = _ => {
+        //    let loginValue = userName.value;
+        //    if (dataValue[loginValue] == null) {
+        //        pleaseCreateNew.style.display = "block";
+        //    }
+        //    else{
+        //        localStorage.setItem('loginId', loginValue);
+        //        window.location = 'homePage.html';
+        //    }
+        //};
+        //
+        //End UI setup
+      };
+    </script>
+  </head>
+
+  <body>
+    <main id="login">
+      <header>
+        <h1>Create Account</h1>
+      </header>
+      <div>
+        <div id="pleaseSelect"><h2 style="color: red">Please Select:</h2></div>
+        <button type="button" class="accountButton" id="patient">
+          <br />PATIENT
+        </button>
+        <button type="button" class="accountButton" id="partner">
+          <br />PARTNER
+        </button>
+        <button type="button" class="accountButton" id="admin">
+          <br />ADMINISTRATOR
+        </button>
+        <div>
+          <h3>User Name:</h3>
+          <input id="userName" type="text" />
+        </div>
+        <div id="partnerDiv">
+          <h3>Partner User Name:</h3>
+          <input id="partnerUserName" type="text" />
+        </div>
+        <div>
+          <h3>First Name:</h3>
+          <input id="firstName" type="text" />
+        </div>
+        <div>
+          <h3>Last Name:</h3>
+          <input id="lastName" type="text" />
+        </div>
+        <div>
+          <h3>Date of Birth:</h3>
+          <input id="dob" type="date" />
+        </div>
+        <div id="adminDiv">
+          <h3>Administrator ID:</h3>
+          <input id="adminID" type="text" />
+        </div>
+        <button type="button" class="accountButton" id="submit">
+          <br />SUBMIT
+        </button>
+      </div>
+
+      <!-- Database, can be switched out with your own database -->
+
+      <!-- The core Firebase JS SDK is always required and must be listed first -->
+      <script src="https://www.gstatic.com/firebasejs/8.2.3/firebase-app.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/8.2.3/firebase-auth.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/8.2.3/firebase-database.js"></script>
+      <!-- TODO: Add SDKs for Firebase products that you want to use
+             https://firebase.google.com/docs/web/setup#available-libraries -->
+      <script src="https://www.gstatic.com/firebasejs/8.2.3/firebase-analytics.js"></script>
+
+      <script>
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        var firebaseConfig = {
+          apiKey: 'AIzaSyDqdgwVB8j6jcgg-qidfTM3BvWe5jaer0g',
+          authDomain: 'uk-project-42ae0.firebaseapp.com',
+          databaseURL: 'https://uk-project-42ae0-default-rtdb.firebaseio.com',
+          projectId: 'uk-project-42ae0',
+          storageBucket: 'uk-project-42ae0.appspot.com',
+          messagingSenderId: '11875313217',
+          appId: '1:11875313217:web:dd8723048cf6475bf208c0',
+          measurementId: 'G-68RF28K3MW',
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        firebase.analytics();
+      </script>
+
+      <!-- ----------------------------------------------------- -->
+    </main>
+  </body>
+</html>
