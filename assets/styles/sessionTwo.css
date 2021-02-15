@@ -374,18 +374,18 @@
 
 
         position: absolute;
-        width: 1100px;
-        height: auto;
-        left: 1258px;
-        top: 132px;
+        width: 1000px;
+        height: 800px;
+        left: 958px;
+        top: 332px;
 
         background: url(Avatar Mouth Shape Chart_Avatar Final Design.jpg);
         mix-blend-mode: darken;
     }
     
-    .avatar img{
-        width: 100%;
-        height: 1280px;
+    .avatar video{
+        width: 1000px;
+        height: 900px;
     }
     .start-btn{
         position: absolute;
