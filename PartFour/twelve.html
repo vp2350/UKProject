@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title></title>
+    <meta name="description" content="" />
+    <meta
+      name="viewport"
+      content="width=device-width, height=device-height initial-scale=1"
+    />
+    <link
+      rel="stylesheet"
+      media="screen"
+      href="https://fontlibrary.org/face/now-alt"
+      type="text/css"
+    />
+    <link rel="stylesheet" href="./assets/styles/sessionTwo.css" />
+    <link rel="stylesheet" href="../assets/styles/twelve.css" />
+
+    <script type="text/javascript">
+      function goFurther() {
+        if (
+          document.getElementById('optnOne').checked == true ||
+          document.getElementById('lineOne').checked == true ||
+          document.getElementById('optnTwo').checked == true ||
+          document.getElementById('lineTwo').checked == true ||
+          document.getElementById('optnThree').checked == true ||
+          document.getElementById('lineThree').checked == true ||
+          document.getElementById('optnFour').checked == true ||
+          document.getElementById('lineFour').checked == true ||
+          document.getElementById('optnFive').checked == true ||
+          document.getElementById('lineFive').checked == true ||
+          document.getElementById('optnSix').checked == true ||
+          document.getElementById('lineSix').checked == true ||
+          document.getElementById('optnSeven').checked == true ||
+          document.getElementById('lineSeven').checked == true ||
+          document.getElementById('optnEight').checked == true ||
+          document.getElementById('lineEight').checked == true
+        )
+          document.getElementById('btnSubmit').disabled = false;
+        else document.getElementById('btnSubmit').disabled = true;
+      }
+    </script>
+    <style type="text/css">
+      input[disabled] {
+        color: white;
+        text-decoration: none;
+        opacity: 0.5;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="mySidebar" class="sidebar">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+        >&times;</a
+      >
+      <a href="#">About</a>
+      <a href="#">Services</a>
+      <a href="#">Clients</a>
+      <a href="#">Contact</a>
+    </div>
+
+    <div id="main">
+      <button class="openbtn" onclick="openNav()">&#9776;</button>
+    </div>
+    <div class="rectangle"></div>
+    <div id="mySidebar" class="sidebar">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+        >&times;</a
+      >
+      <a href="#">Home</a>
+      <a href="#">Topics</a>
+      <a href="#">Preferences</a>
+      <a href="#">Sign Out</a>
+    </div>
+
+    <!--[if lt IE 7]>
+      <p class="browsehappy">
+        You are using an <strong>outdated</strong> browser. Please
+        <a href="#">upgrade your browser</a> to improve your experience.
+      </p>
+    <![endif]-->
+    <div class="Session-two">
+      <div class="programAdvance">
+        <h3>Programme Advance</h3>
+      </div>
+      <div class="partOneCheckIn">Part IV: Today's Session</div>
+
+      <div class="question">
+        Please select the options below that you feel would have reduced the
+        risk of Jim behaving abusively:
+      </div>
+      <div class="selectionOne">
+        <input type="checkbox" id="optnOne" onclick="goFurther()" />
+        Drunk Less
+        <input type="checkbox" id="lineOne" onclick="goFurther()" /> Gone to bed
+      </div>
+      <div class="selectionTwo">
+        <input type="checkbox" id="optnTwo" onclick="goFurther()" /> Trusted
+        Marie
+        <input type="checkbox" id="lineTwo" onclick="goFurther()" /> Talked to a
+        mate that gives good advice
+      </div>
+      <div class="selectionThree">
+        <input type="checkbox" id="optnThree" onclick="goFurther()" /> Planned
+        to do something fun
+        <input type="checkbox" id="lineThree" onclick="goFurther()" /> Talk to a
+        professional
+      </div>
+      <div class="selectionFour">
+        <input type="checkbox" id="optnFour" onclick="goFurther()" /> Tried to
+        phone her friend Maxine to see where Marie was
+        <input type="checkbox" id="lineFour" onclick="goFurther()" /> Self
+        soothe - using items from his just in case box
+      </div>
+      <div class="selectionFive">
+        <input type="checkbox" id="optnFive" onclick="goFurther()" /> Manage my
+        jealousy
+        <input type="checkbox" id="lineFive" onclick="goFurther()" /> Distracted
+        himself(go for a run)
+      </div>
+      <div class="selectionSix">
+        <input type="checkbox" id="optnSix" onclick="goFurther()" /> Not jumped
+        to conclusion
+        <input type="checkbox" id="lineSix" onclick="goFurther()" /> Taken a
+        time out
+      </div>
+      <div class="selectionSeven">
+        <input type="checkbox" id="optnSeven" onclick="goFurther()" /> Listened
+        to marie when she came home
+        <input type="checkbox" id="lineSeven" onclick="goFurther()" /> Talked to
+        marie about it the next day
+      </div>
+      <div class="selectionEight">
+        <input type="checkbox" id="optnEight" onclick="goFurther()" /> Keep
+        texting until she replied
+        <input type="checkbox" id="lineEight" onclick="goFurther()" /> Told
+        himself if he had a negative thought it was only a thought and not real
+      </div>
+
+      <a href="./thirteen.html"
+        ><input
+          type="button"
+          value="NEXT"
+          id="btnSubmit"
+          disabled="disabled"
+          class="nxtImageFocus"
+      /></a>
+      <!-- <a href="test.html" class="button">NEXT</div> -->
+    </div>
+  </body>
+</html>

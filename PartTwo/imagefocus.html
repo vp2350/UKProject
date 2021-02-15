@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title></title>
+    <meta name="description" content="" />
+    <meta
+      name="viewport"
+      content="width=device-width, height=device-height initial-scale=1"
+    />
+    <link
+      rel="stylesheet"
+      media="screen"
+      href="https://fontlibrary.org/face/now-alt"
+      type="text/css"
+    />
+    
+    <link rel="stylesheet" href="./assets/styles/sessionTwo.css" />
+    <link rel="stylesheet" href="../assets/styles/imagefocus.css" />
+
+    <!-- <script src="./assets/scripts/fparttwo.js"></script> -->
+    <script type="text/javascript">
+        function goFurther() {
+          if (
+            document.getElementById('chkAgree').checked == true ||
+            document.getElementById('chkAgreeTwo').checked == true ||
+            document.getElementById('chkAgreeThree').checked == true
+          )
+            document.getElementById('btnSubmit').disabled = false;
+          else document.getElementById('btnSubmit').disabled = true;
+        }
+      </script>
+    <style type="text/css">
+        input[disabled] {
+        color: white;
+        text-decoration: none;
+        opacity: 0.5;
+      }
+      
+
+</style>
+
+  </head>
+  <body>
+    <div id="mySidebar" class="sidebar">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+        >&times;</a
+      >
+      <a href="#">About</a>
+      <a href="#">Services</a>
+      <a href="#">Clients</a>
+      <a href="#">Contact</a>
+    </div>
+
+    <div id="main">
+      <button class="openbtn" onclick="openNav()">&#9776;</button>
+    </div>
+    <div class="rectangle"></div>
+    <div id="mySidebar" class="sidebar">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+        >&times;</a
+      >
+      <a href="#">Home</a>
+      <a href="#">Topics</a>
+      <a href="#">Preferences</a>
+      <a href="#">Sign Out</a>
+    </div>
+
+    <!--[if lt IE 7]>
+      <p class="browsehappy">
+        You are using an <strong>outdated</strong> browser. Please
+        <a href="#">upgrade your browser</a> to improve your experience.
+      </p>
+    <![endif]-->
+    <div class="Session-two">
+      <div class="programAdvance">
+        <h3>Programme Advance</h3>
+      </div>
+      <div class="partOneCheckIn">Part II: Focussing Exercise</div>
+
+      <div class="question">Which image would you like to focus on?</div>
+      <!-- <textarea class="userAnswer"></textarea>
+      <div class="avatar">
+        <img class="avatarone" src="images/Avatar.jpg" />
+      </div> -->
+      <div class="row">
+        <div class="column">
+          <img src="/images/1.png" alt="Snow" style="width: 100%" />
+        </div>
+        <div class="column">
+          <img src="/images/2.png" alt="Forest" style="width: 100%" />
+        </div>
+        <div class="column">
+          <img src="/images/3.png" alt="Mountains" style="width: 100%" />
+        </div>
+      </div>
+      <form>
+        <label class="radio-inline" id="optn1">
+          <input
+            type="radio"
+            id="chkAgree"
+            name="optradio"
+            class="option-one"
+            onclick="goFurther()"
+          />
+        </label>
+        <label class="radio-inline" id="optn2">
+          <input
+            type="radio"
+            id="chkAgreeTwo"
+            name="optradio"
+            class="option-two"
+            onclick="goFurther()"
+          />
+        </label>
+        <label class="radio-inline" id="optn3">
+          <input
+            type="radio"
+            id="chkAgreeThree"
+            name="optradio"
+            class="option-three"
+            onclick="goFurther()"
+          />
+        </label>
+      </form>
+      <a href="/PartTwo/stagethree.html"
+        ><input
+          type="button"
+          value="NEXT"
+          id="btnSubmit"
+          disabled="disabled"
+          class="nxtImageFocus"
+      /></a> 
+      <!-- <a href="test.html" class="button">NEXT</div> -->
+    </div>
+      <!-- <button class="start-btn" value="NEXT" id="btnSubmit" disabled="disabled" onclick="window.location.href='stagethree.html'">
+        <span class="startSession">NEXT</span>
+      </button> -->
+      <!-- <a href="test.html" class="button">NEXT</div> -->
+    </div>
+  </body>
+</html>

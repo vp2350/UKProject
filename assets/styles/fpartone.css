@@ -1,0 +1,128 @@
+/* .focus-parttwo {
+  width: 801px;
+  height: 1023px;
+} */
+@import url('https://fonts.googleapis.com/css2?family=Bitter:wght@700&display=swap');
+
+.focussing-excercise {
+  position: absolute;
+  width: 514.28px;
+  height: 48.45px;
+  left: 60px;
+  /* top: 229.1px; */
+  top: 50px;
+  font-family: Bitter;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 47px;
+
+  color: #000000;
+}
+.content {
+  position: absolute;
+  width: 223px;
+  height: 90px;
+  left: 65px;
+  /* top: 320px; */
+  top: 150px;
+  background: rgba(196, 196, 196, 0.2);
+  border-radius: 2px;
+  display: flex;
+}
+.content p {
+  font-size: 8px;
+  margin-left: 10px;
+  width: 204px;
+  height: 33px;
+  margin-top: 12px;
+  font-family: Now Alt;
+  font-style: normal;
+  font-weight: normal;
+}
+.avatar {
+  display: flex;
+}
+.avatarone {
+  display: inline-block;
+  width: 205px;
+  margin-left: 278px;
+  margin-top: 63px;
+  height: 244px;
+}
+.button {
+  cursor: pointer;
+  border: none;
+  background: #5c8f96;
+  color: white;
+  font-size: 10px;
+  margin-left: 30px;
+  text-decoration: none;
+  width: 90px;
+}
+
+@media (min-width: 320px) {
+  /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */
+}
+@media (min-width: 480px) {
+  /* smartphones, Android phones, landscape iPhone */
+}
+@media (min-width: 600px) {
+  /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */
+}
+@media (min-width: 768px) {
+  /* tablet, landscape iPad, lo-res laptops ands desktops */
+  .focussing-excercise {
+    font-size: 30px;
+    width: 514.28px;
+    height: 48.45px;
+  }
+  .content {
+    margin-top: 50px;
+    width: 350px;
+    height: 165px;
+    margin-left: 30px;
+    background: rgba(196, 196, 196, 0.2);
+  }
+  .content .test {
+    font-size: 10px;
+    margin-left: 39px;
+    width: 235px;
+    height: 33px;
+    margin-top: 22px;
+    font-family: Now Alt;
+    font-style: normal;
+    font-weight: 400;
+    /* color: red; */
+  }
+  .avatar {
+    display: flex;
+    width: 314px;
+    height: 150px;
+    margin-left: 436px;
+    margin-top: 135px;
+  }
+  .avatarone {
+    display: inline-block;
+    width: 365px;
+    height: 607px;
+    margin-left: -46px;
+    margin-top: -26px;
+  }
+  .nxt-btn {
+    margin-top: 252px;
+    margin-left: 96px;
+    width: 150px;
+    height: 42px;
+    background: #5c8f96;
+    color: white;
+    opacity: 0.3;
+    border: none;
+  }
+}
+@media (min-width: 1025px) {
+  /* big landscape tablets, laptops, and desktops */
+}
+@media (min-width: 1281px) {
+  /* hi-res laptops and desktops */
+}

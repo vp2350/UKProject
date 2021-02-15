@@ -1,0 +1,423 @@
+/* .Session2 Start {
+  width: 801px;
+  height: 1023px;
+} */
+@import url('https://fonts.googleapis.com/css2?family=Bitter:wght@700&display=swap');
+/* The sidebar menu */
+.sidebar {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0;
+  left: 0;
+  background-color: #111; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
+}
+
+/* The sidebar links */
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+
+.openbtn:hover {
+  background-color: #444;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+    position: absolute;
+    top: 150px;
+    left:160px;
+    transition: margin-left .5s; /* If you want a transition effect */
+    padding: 20px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidebar {padding-top: 15px;}
+    .sidebar a {font-size: 18px;}
+}
+
+@media (min-width: 320px) {
+  /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */
+}
+@media (min-width: 480px) {
+  /* smartphones, Android phones, landscape iPhone */
+}
+@media (min-width: 600px) {
+  /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */
+}
+@media (min-width: 768px) {
+    /* tablet, landscape iPad, lo-res laptops ands desktops */
+    .programAdvance {
+        /* Programme Advance */
+        position: absolute;
+        width: 792.11px;
+        height: 56.24px;
+        left: 262px;
+        top: 90px;
+
+        font-family: Now;
+        font-style: normal;
+        font-weight: 900;
+        font-size: 60px;
+        line-height: 62px;
+
+        color: #000000;
+
+    }
+      
+    .sessionName{
+        /* Session Two */
+        position: absolute;
+        width: 475.23px;
+        height: 52.87px;
+        left: 202px;
+        top: 803.13px;
+
+        font-family: Now;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 47px;
+        line-height: 39px;
+
+        color: #000000;
+    }
+  
+    .managing{
+        /* Managing Myself */
+        position: absolute;
+        width: 800px;
+        height: 52.87px;
+        left: 202px;
+        top: 878px;
+
+        font-family: Bitter;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 69px;
+        line-height: 53px;
+        /* identical to box height */
+
+        color: #000000;
+    }
+    
+    .avatar{
+        /* Avatar Mouth Shape Chart_Avatar Final Design 1 */
+
+
+        position: absolute;
+        width: 784.75px;
+        height: 1256.13px;
+        left: 720px;
+        top: 680px;
+
+        background: url(Avatar Mouth Shape Chart_Avatar Final Design.jpg);
+        mix-blend-mode: darken;
+    }
+    
+    .avatar img{
+        width: 100%;
+        height: 950px;
+    }
+    .start-btn{
+        position: absolute;
+        width: 259.78px;
+        height: 97.52px;
+        left: 202px;
+        top: 1078.89px;
+
+        background: #5C8F96;
+        border-radius: 2.28013px;
+    }
+    
+    .startSession{
+        position: absolute;
+        width: 209.78px;
+        height: 30.04px;
+        left: 25px;
+        top: 18px;
+
+        font-family: Now;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 35px;
+        line-height: 141.69%;
+/* or 37px */
+
+        text-align: center;
+        letter-spacing: 0.095em;
+
+        color: #FFFFFF;
+    }
+}
+@media (min-width: 1021px) {
+  /* big landscape tablets, laptops, and desktops */
+    
+}
+@media (min-width: 1271px) {
+  /* hi-res laptops and desktops */
+    #main {
+        position: absolute;
+        top: 80px;
+        left:80px;
+        transition: margin-left .5s; /* If you want a transition effect */
+        padding: 20px;
+    }
+    /* The button used to open the sidebar */
+    .openbtn {
+      font-size: 20px;
+      cursor: pointer;
+      background-color: #111;
+      color: white;
+      padding: 10px 15px;
+      border: none;
+    }
+    .programAdvance {
+        /* Programme Advance */
+        position: absolute;
+        width: 1092.11px;
+        height: 56.24px;
+        left: 182px;
+        top: 45px;
+
+        font-family: Now;
+        font-style: normal;
+        font-weight: 900;
+        font-size: 40px;
+        line-height: 62px;
+
+        color: #000000;
+
+    }
+      
+    .sessionName{
+        /* Session Two */
+        position: absolute;
+        width: 475.23px;
+        height: 52.87px;
+        left: 102px;
+        top: 403.13px;
+
+        font-family: Now;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 40px;
+        line-height: 39px;
+
+        color: #000000;
+    }
+  
+    .managing{
+        /* Managing Myself */
+        position: absolute;
+        width: 800px;
+        height: 52.87px;
+        left: 102px;
+        top: 448px;
+
+        font-family: Bitter;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 60px;
+        line-height: 53px;
+        /* identical to box height */
+
+        color: #000000;
+    }
+    
+    .avatar{
+        /* Avatar Mouth Shape Chart_Avatar Final Design 1 */
+
+
+        position: absolute;
+        width: 600px;
+        height: auto;
+        left: 658px;
+        top: 50px;
+
+        background: url(Avatar Mouth Shape Chart_Avatar Final Design.jpg);
+        mix-blend-mode: darken;
+    }
+    
+    .avatar img{
+        width: 100%;
+        height: 750px;
+    }
+    .start-btn{
+        position: absolute;
+        width: 199.78px;
+        height: 87.52px;
+        left: 102px;
+        top: 578.89px;
+
+        background: #5C8F96;
+        border-radius: 2.28013px;
+    }
+    
+    .startSession{
+        position: absolute;
+        width: 209.78px;
+        height: 30.04px;
+        left: -8px;
+        top: 24px;
+
+        font-family: Now;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 25px;
+        line-height: 141.69%;
+/* or 37px */
+
+        text-align: center;
+        letter-spacing: 0.095em;
+
+        color: #FFFFFF;
+    }
+}
+
+@media (min-width: 1920px) {
+    #main {
+        position: absolute;
+        top: 160px;
+        left:180px;
+        transition: margin-left .5s; /* If you want a transition effect */
+        padding: 20px;
+    }
+    /* The button used to open the sidebar */
+    .openbtn {
+      font-size: 30px;
+      cursor: pointer;
+      background-color: #111;
+      color: white;
+      padding: 10px 15px;
+      border: none;
+    }
+    .programAdvance {
+        /* Programme Advance */
+        position: absolute;
+        width: 1092.11px;
+        height: 56.24px;
+        left: 282px;
+        top: 110px;
+
+        font-family: Now;
+        font-style: normal;
+        font-weight: 900;
+        font-size: 60px;
+        line-height: 62px;
+
+        color: #000000;
+
+    }
+      
+    .sessionName{
+        /* Session Two */
+        position: absolute;
+        width: 475.23px;
+        height: 52.87px;
+        left: 202px;
+        top: 603.13px;
+
+        font-family: Now;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 60px;
+        line-height: 39px;
+
+        color: #000000;
+    }
+  
+    .managing{
+        /* Managing Myself */
+        position: absolute;
+        width: 800px;
+        height: 52.87px;
+        left: 202px;
+        top: 678px;
+
+        font-family: Bitter;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 89px;
+        line-height: 53px;
+        /* identical to box height */
+
+        color: #000000;
+    }
+    
+    .avatar{
+        /* Avatar Mouth Shape Chart_Avatar Final Design 1 */
+
+
+        position: absolute;
+        width: 1100px;
+        height: auto;
+        left: 1258px;
+        top: 132px;
+
+        background: url(Avatar Mouth Shape Chart_Avatar Final Design.jpg);
+        mix-blend-mode: darken;
+    }
+    
+    .avatar img{
+        width: 100%;
+        height: 1280px;
+    }
+    .start-btn{
+        position: absolute;
+        width: 299.78px;
+        height: 117.52px;
+        left: 202px;
+        top: 1078.89px;
+
+        background: #5C8F96;
+        border-radius: 2.28013px;
+    }
+    
+    .startSession{
+        position: absolute;
+        width: 209.78px;
+        height: 30.04px;
+        left: 36px;
+        top: 26px;
+
+        font-family: Now;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 45px;
+        line-height: 141.69%;
+/* or 37px */
+
+        text-align: center;
+        letter-spacing: 0.095em;
+
+        color: #FFFFFF;
+    }
+}
+
+
+

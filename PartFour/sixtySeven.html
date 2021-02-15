@@ -16,10 +16,12 @@
     <link
       rel="stylesheet"
       media="screen"
-      href="http://fontlibrary.org/face/now-alt"
+      href="https://fontlibrary.org/face/now-alt"
       type="text/css"
     />
     <link rel="stylesheet" href="../assets/styles/sessionTwo.css" />
+    <link rel="stylesheet" href="../assets/styles/fiftyEight.css" />
+
     <!-- <script src="./assets/scripts/fparttwo.js"></script> -->
   </head>
   <body>
@@ -36,6 +38,16 @@
     <div id="main">
       <button class="openbtn" onclick="openNav()">&#9776;</button>
     </div>
+    <div class="rectangle"></div>
+    <div id="mySidebar" class="sidebar">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+        >&times;</a
+      >
+      <a href="#">Home</a>
+      <a href="#">Topics</a>
+      <a href="#">Preferences</a>
+      <a href="#">Sign Out</a>
+    </div>
 
     <!--[if lt IE 7]>
       <p class="browsehappy">
@@ -43,36 +55,29 @@
         <a href="#">upgrade your browser</a> to improve your experience.
       </p>
     <![endif]-->
-
     <div class="Session-two">
       <div class="programAdvance">
         <h3>Programme Advance</h3>
       </div>
-      <div class="sessionName">Session Two</div>
-      <div class="managing">Managing Myself</div>
+      <div class="partOneCheckIn">Part IV: Today's Session</div>
+      <!-- <div class="partOne">
+        Part IV: Understanding my substance use and my behaviour
+      </div> -->
+      <div class="content">
+        <p class="test">
+            If you are feeling <b>stressed, worried, or anxious</b>, click on the yellow box to select it.   
+        </p>
+      </div>
       <div class="avatar">
         <img class="avatarone" src="../images/Avatar.jpg" />
       </div>
       <button
         class="start-btn"
-        onclick="window.location.href='../PartOne/CheckInOne.html'"
+        onclick="window.location.href='./sixtyEight.html'"
       >
-        <span class="startSession">START</span>
+        <span class="startSession">NEXT</span>
       </button>
       <!-- <a href="test.html" class="button">NEXT</div> -->
     </div>
   </body>
-  <script>
-    /* Set the width of the sidebar to 250px and the left margin of the page content to 250px */
-    function openNav() {
-      document.getElementById('mySidebar').style.width = '1250px';
-      document.getElementById('main').style.marginLeft = '1250px';
-    }
-
-    /* Set the width of the sidebar to 0 and the left margin of the page content to 0 */
-    function closeNav() {
-      document.getElementById('mySidebar').style.width = '0';
-      document.getElementById('main').style.marginLeft = '0';
-    }
-  </script>
 </html>

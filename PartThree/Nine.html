@@ -1,0 +1,107 @@
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title></title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, height=device-height initial-scale=1" />
+    <link
+      rel="stylesheet"
+      media="screen"
+      href="https://fontlibrary.org/face/now-alt"
+      type="text/css"
+    />
+    <link rel="stylesheet" href="../assets/styles/Part3/Nine.css" />
+    <script>
+        window.onload = e => {
+            start.onclick = function(){
+                var elems = document.querySelectorAll(".selected");
+                [].forEach.call(elems, function(el){
+                    if(el.id == "selectYes"){
+                        window.location.href = "../PartThree/Ten.html";
+                    }
+                    else{
+                        window.location.href = "../PartThree/Thirteen.html";
+                    }
+                });
+                
+            }
+            console.log("1234");
+            selectNo.onclick = function(e){
+                var elems = document.querySelectorAll(".selected");
+
+                [].forEach.call(elems, function(el) {
+                    el.classList.remove("selected");
+                });
+                selectNo.classList.add("selected");
+                noSelected.style.display = "block";
+                yesSelected.style.display = "none";
+            }
+            selectYes.onclick = function(e){
+                var elems = document.querySelectorAll(".selected");
+
+                [].forEach.call(elems, function(el) {
+                    el.classList.remove("selected");
+                });
+                selectYes.classList.add("selected");
+                yesSelected.style.display = "block";
+                noSelected.style.display = "none";
+
+            }
+        }
+    </script>
+    <!-- <script src="./assets/scripts/fparttwo.js"></script> -->
+  </head>
+  <body>
+   <div id="mySidebar" class="sidebar">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <a href="#">About</a>
+          <a href="#">Services</a>
+          <a href="#">Clients</a>
+          <a href="#">Contact</a>
+        </div>
+
+        <div id="main">
+          <button class="openbtn" onclick="openNav()">&#9776;</button>
+        </div>
+    <div class="rectangle"></div>
+    <div id="mySidebar" class="sidebar">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="#">Home</a>
+      <a href="#">Topics</a>
+      <a href="#">Preferences</a>
+      <a href="#">Sign Out</a>
+    </div>
+
+        <!--[if lt IE 7]>
+      <p class="browsehappy">
+        You are using an <strong>outdated</strong> browser. Please
+        <a href="#">upgrade your browser</a> to improve your experience.
+      </p>
+    <![endif]-->
+    <div class="Session-two">
+      <div class="programAdvance">
+        <h3>Programme Advance</h3>
+      </div>
+      <div class="partOneCheckIn">
+          Part III: Recap
+      </div>
+      <div class="pastWeek">Did you manage to use any of these skills last week?</div>
+      <div id="selectNo" value = "no">No</div>
+      <div id="selectYes" value = "yes">Yes</div>
+      <div id = "yesSelected">Sorry to hear that you have had some challenges. It’s great to hear that you have used some of the skills from last week. Take a moment to how the skills helped and do talk to your facilitator about your issues.</div>
+      <div id = "noSelected">I notice you have not used the skills we introduced last week. Was this because you didn’t need to? Sometimes it takes a while to recognise when we should beusing these skills. Do keep an eye out for when you could use them in the coming weeks</div>
+      <div class="avatar">
+        <img class="avatarone" src="../images/Avatar.jpg" />
+      </div>
+      <button class = "start-btn" id="start">  
+         <span class="startSession">NEXT</span>
+      </button>
+      <!-- <a href="test.html" class="button">NEXT</div> -->
+    </div>
+  </body>
+</html>

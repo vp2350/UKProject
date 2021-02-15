@@ -16,10 +16,12 @@
     <link
       rel="stylesheet"
       media="screen"
-      href="http://fontlibrary.org/face/now-alt"
+      href="https://fontlibrary.org/face/now-alt"
       type="text/css"
     />
     <link rel="stylesheet" href="../assets/styles/sessionTwo.css" />
+    <link rel="stylesheet" href="../assets/styles/stagethree.css" />
+
     <!-- <script src="./assets/scripts/fparttwo.js"></script> -->
   </head>
   <body>
@@ -36,6 +38,16 @@
     <div id="main">
       <button class="openbtn" onclick="openNav()">&#9776;</button>
     </div>
+    <div class="rectangle"></div>
+    <div id="mySidebar" class="sidebar">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+        >&times;</a
+      >
+      <a href="#">Home</a>
+      <a href="#">Topics</a>
+      <a href="#">Preferences</a>
+      <a href="#">Sign Out</a>
+    </div>
 
     <!--[if lt IE 7]>
       <p class="browsehappy">
@@ -43,36 +55,34 @@
         <a href="#">upgrade your browser</a> to improve your experience.
       </p>
     <![endif]-->
-
     <div class="Session-two">
       <div class="programAdvance">
         <h3>Programme Advance</h3>
       </div>
-      <div class="sessionName">Session Two</div>
-      <div class="managing">Managing Myself</div>
+      <div class="partOneCheckIn">Part II: Focussing Excercise</div>
+      <!-- <div class="partOne">Part II: Focussing Excercise</div> -->
+      <div class="content">
+        <p class="test">
+          I would like to you close your eyes if you feel comfortable doing so,
+          or focus on the picture on the screen. Take a moment to think about a
+          place where you have felt comfortable. This can be anywhere that means
+          something to you. You may be visualising some woods you like to walk
+          through, a beach where you once went on holiday or a park you enjoy
+          walking around. Whenever you feel the need to relax try to visualise
+          this place in as much detail as you can. Use your senses to make it as
+          real as possible. Visualise yourself enjoying this place
+        </p>
+      </div>
       <div class="avatar">
-        <img class="avatarone" src="../images/Avatar.jpg" />
+        <img class="avatarone" src="../images/avatar-two.png" />
       </div>
       <button
         class="start-btn"
-        onclick="window.location.href='../PartOne/CheckInOne.html'"
+        onclick="window.location.href='/PartTwo/stagefour.html'"
       >
-        <span class="startSession">START</span>
+        <span class="startSession">NEXT</span>
       </button>
       <!-- <a href="test.html" class="button">NEXT</div> -->
     </div>
   </body>
-  <script>
-    /* Set the width of the sidebar to 250px and the left margin of the page content to 250px */
-    function openNav() {
-      document.getElementById('mySidebar').style.width = '1250px';
-      document.getElementById('main').style.marginLeft = '1250px';
-    }
-
-    /* Set the width of the sidebar to 0 and the left margin of the page content to 0 */
-    function closeNav() {
-      document.getElementById('mySidebar').style.width = '0';
-      document.getElementById('main').style.marginLeft = '0';
-    }
-  </script>
 </html>

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title></title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, height=device-height initial-scale=1" />
+    <link
+      rel="stylesheet"
+      media="screen"
+      href="https://fontlibrary.org/face/now-alt"
+      type="text/css"
+    />
+    <link rel="stylesheet" href="../assets/styles/CheckInSixteen.css" />
+    <script>
+        window.onload = e => {
+            console.log("1234");
+            selectNumberOne.onclick = function(e){
+                var elems = document.querySelectorAll(".selected");
+
+                [].forEach.call(elems, function(el) {
+                    el.classList.remove("selected");
+                });
+                selectNumberOne.classList.add("selected");
+            }
+            selectNumberTwo.onclick = function(e){
+                var elems = document.querySelectorAll(".selected");
+
+                [].forEach.call(elems, function(el) {
+                    el.classList.remove("selected");
+                });
+                selectNumberTwo.classList.add("selected");
+            }
+            selectNumberThree.onclick = function(e){
+                var elems = document.querySelectorAll(".selected");
+
+                [].forEach.call(elems, function(el) {
+                    el.classList.remove("selected");
+                });
+                selectNumberThree.classList.add("selected");
+            }
+            selectNumberFour.onclick = function(e){
+                var elems = document.querySelectorAll(".selected");
+
+                [].forEach.call(elems, function(el) {
+                    el.classList.remove("selected");
+                });
+                selectNumberFour.classList.add("selected");
+            }
+            selectNumberFive.onclick = function(e){
+                var elems = document.querySelectorAll(".selected");
+
+                [].forEach.call(elems, function(el) {
+                    el.classList.remove("selected");
+                });
+                selectNumberFive.classList.add("selected");
+            }
+            selectNumberSix.onclick = function(e){
+                var elems = document.querySelectorAll(".selected");
+
+                [].forEach.call(elems, function(el) {
+                    el.classList.remove("selected");
+                });
+                selectNumberSix.classList.add("selected");
+            }
+            selectNumberSeven.onclick = function(e){
+                var elems = document.querySelectorAll(".selected");
+
+                [].forEach.call(elems, function(el) {
+                    el.classList.remove("selected");
+                });
+                selectNumberSeven.classList.add("selected");
+            }
+        }
+    </script>
+    <!-- <script src="./assets/scripts/fparttwo.js"></script> -->
+  </head>
+  <body>
+   <div id="mySidebar" class="sidebar">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <a href="#">About</a>
+          <a href="#">Services</a>
+          <a href="#">Clients</a>
+          <a href="#">Contact</a>
+        </div>
+
+        <div id="main">
+          <button class="openbtn" onclick="openNav()">&#9776;</button>
+        </div>
+    <div class="rectangle"></div>
+    <div id="mySidebar" class="sidebar">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="#">Home</a>
+      <a href="#">Topics</a>
+      <a href="#">Preferences</a>
+      <a href="#">Sign Out</a>
+    </div>
+
+        <!--[if lt IE 7]>
+      <p class="browsehappy">
+        You are using an <strong>outdated</strong> browser. Please
+        <a href="#">upgrade your browser</a> to improve your experience.
+      </p>
+    <![endif]-->
+    <div class="Session-two">
+      <div class="programAdvance">
+        <h3>Programme Advance</h3>
+      </div>
+      <div class="partOneCheckIn">
+          Part I: Check In
+      </div>
+      <div class="pastWeek">In the past week, how many days have you:</div>
+      <div class="question">experienced any other medical conditions</div>
+      <div id="selectNumberOne">1</div>
+      <div id="selectNumberTwo">2</div>
+      <div id="selectNumberThree">3</div>
+      <div id="selectNumberFour">4</div>
+      <div id="selectNumberFive">5</div>
+      <div id="selectNumberSix">6</div>
+      <div id="selectNumberSeven">7</div>
+      <div class="avatar">
+        <img class="avatarone" src="../images/Avatar.jpg" />
+      </div>
+      <button class = "start-btn" onclick="window.location.href='CheckInSeventeen.html'">  
+                <span class="startSession">NEXT</span>
+            </button>
+      <!-- <a href="test.html" class="button">NEXT</div> -->
+    </div>
+  </body>
+</html>

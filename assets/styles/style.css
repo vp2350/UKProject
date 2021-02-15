@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bitter:wght@700&display=swap');
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: #224941 url('/images/bg.jpg') no-repeat center center/cover;
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  min-height: 100vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  height: 300px;
+  width: 300px;
+  position: relative;
+  transform: scale(1);
+}
+
+.circle {
+  background-color: #010f1c;
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.gradient-circle {
+  background: conic-gradient(
+    #55b7a4 0%,
+    #4ca493 40%,
+    #fff 40%,
+    #fff 60%,
+    #336d62 60%,
+    #2a5b52 100%
+  );
+  height: 320px;
+  width: 320px;
+  z-index: -2;
+  border-radius: 50%;
+  position: absolute;
+  top: -10px;
+  left: -10px;
+}
+
+.pointer {
+  background-color: #fff;
+  border-radius: 50%;
+  height: 20px;
+  width: 20px;
+  display: block;
+}
+
+.pointer-container {
+  position: absolute;
+  top: -40px;
+  left: 140px;
+  width: 20px;
+  height: 190px;
+  animation: rotate 7.5s linear forwards infinite;
+  transform-origin: bottom center;
+}
+.nbtn-seven {
+  /* margin-top: 255px; */
+  width: 150px;
+  height: 42px;
+  background: #5c8f96;
+  color: white;
+  margin-right: 900px !important;
+  margin-bottom: 60px;
+}
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.container.grow {
+  animation: grow 3s linear forwards;
+}
+
+@keyframes grow {
+  from {
+    transform: scale(1);
+  }
+
+  to {
+    transform: scale(1.2);
+  }
+}
+
+.container.shrink {
+  animation: shrink 3s linear forwards;
+}
+
+@keyframes shrink {
+  from {
+    transform: scale(1.2);
+  }
+
+  to {
+    transform: scale(1);
+  }
+}
+body {
+  margin: 0;
+}
+
+.topnav {
+  overflow: hidden;
+  background: white;
+  width: 100%;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: BLACK;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none !important;
+  font-size: 17px;
+  font-family: Now Alt;
+  font-weight: 900;
+}
+
+.topnav a.active {
+  background-color: #4caf50;
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {
+    display: none;
+  }
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {
+    position: relative;
+  }
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+#myProgress {
+  width: 100%;
+  background-color: #ddd;
+}
+
+#myBar {
+  width: 20%;
+  height: 10px;
+  background-color: #5c8f96;
+}
+@media (min-width: 2000px) {
+  #nxtImageFocus {
+    margin-top: 1011px !important;
+    margin-right: 960px !important;
+    width: 309.78px !important;
+    height: 97.52px !important;
+    background: #5c8f96;
+    color: white;
+    border: none;
+  }
+  #nxtImageFocus {
+    position: absolute;
+    /* width: 209.78px;
+    height: 30.04px; */
+    left: 36px;
+    top: 1000px;
+
+    font-family: Now;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 45px !important;
+    line-height: 141.69%;
+    /* or 37px */
+
+    text-align: center;
+    letter-spacing: 0.095em;
+
+    color: #ffffff;
+  }
+}
+@media(min-width:1271px){
+  #nxtImageFocus {
+    /* margin-top: 677px !important;*/
+    margin-right: 820px !important; 
+    width: 190.79px;
+    height: 52.52px;
+
+    background: #5c8f96;
+    color: white;
+    border: none;
+  }
+  #nxtImageFocus {
+    /* position: absolute; */
+    /* width: 209.78px;
+    height: 30.04px; */
+    left: 36px;
+    top: 26px;
+
+    font-family: Now;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 29px !important;
+    line-height: 141.69%;
+    /* or 37px */
+
+    text-align: center;
+    letter-spacing: 0.095em;
+
+    
+}
