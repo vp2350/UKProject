@@ -245,7 +245,7 @@
     }
 }
 @media (min-width: 1271px) {
-   .programAdvance {
+  .programAdvance {
         /* Programme Advance */
         position: absolute;
         width: 792.11px;
@@ -424,10 +424,8 @@
 
         color: #FFFFFF;
     }
+    
 }
-
-
-
 @media (min-width: 2000px) {
     .programAdvance {
         /* Programme Advance */
