@@ -200,18 +200,18 @@
 
 
         position: absolute;
-        width: 600px;
-        height: auto;
-        left: 598px;
-        top: 200px;
+        width: 1224.75px;
+        height: 1056.13px;
+        left: 720px;
+        top: 770px;
 
         background: url(Avatar Mouth Shape Chart_Avatar Final Design.jpg);
         mix-blend-mode: darken;
     }
     
-    .avatar video{
+    .avatar img{
         width: 100%;
-        height: 600px;
+        height: auto;
     }
     .start-btn{
         position: absolute;
@@ -382,15 +382,17 @@
 
         position: absolute;
         width: 600px;
-        height: 400px;
-        left: 598px;
-        top: 300px;
+        height: auto;
+        left: 658px;
+        top: 50px;
 
         background: url(Avatar Mouth Shape Chart_Avatar Final Design.jpg);
         mix-blend-mode: darken;
     }
-    .avatar video{
-        height: 500px;
+    
+    .avatar img{
+        width: 100%;
+        height: 750px;
     }
     .start-btn{
         position: absolute;
@@ -563,18 +565,18 @@
 
 
         position: absolute;
-        width: 900px;
+        width: 800px;
         height: auto;
-        left: 1088px;
-        top: 400px;
+        left: 1158px;
+        top: 200px;
 
         background: url(Avatar Mouth Shape Chart_Avatar Final Design.jpg);
         mix-blend-mode: darken;
     }
     
-    .avatar video{
+    .avatar img{
         width: 100%;
-        height: 800px;
+        height: 1000px;
     }
     .start-btn{
         position: absolute;
