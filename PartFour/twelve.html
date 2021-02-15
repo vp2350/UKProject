@@ -31,7 +31,7 @@
           document.getElementById('lineTwo').checked == true ||
           document.getElementById('optnThree').checked == true ||
           document.getElementById('lineThree').checked == true ||
-          document.getElementById('optnFour').checked == true ||
+          // document.getElementById('optnFour').checked == true ||
           document.getElementById('lineFour').checked == true ||
           document.getElementById('optnFive').checked == true ||
           document.getElementById('lineFive').checked == true ||
@@ -39,11 +39,18 @@
           document.getElementById('lineSix').checked == true ||
           document.getElementById('optnSeven').checked == true ||
           document.getElementById('lineSeven').checked == true ||
-          document.getElementById('optnEight').checked == true ||
+          // document.getElementById('optnFour').checked == true ||
           document.getElementById('lineEight').checked == true
-        )
+        ) {
           document.getElementById('btnSubmit').disabled = false;
-        else document.getElementById('btnSubmit').disabled = true;
+        } else if (
+          document.getElementById('optnFour').checked == true ||
+          document.getElementById('optnEight').checked == true
+        ) {
+          window.open('wrong-option.html', '_self');
+        } else document.getElementById('btnSubmit').disabled = true;
+
+        // function openModal(){
       }
     </script>
     <style type="text/css">
@@ -113,8 +120,8 @@
         professional
       </div>
       <div class="selectionFour">
-        <input type="checkbox" id="optnFour" onclick="goFurther()" /> Tried to
-        phone her friend Maxine to see where Marie was
+        <input type="checkbox" id="optnFour" onclick="goFurther()" />
+        Tried to phone her friend Maxine to see where Marie was
         <input type="checkbox" id="lineFour" onclick="goFurther()" /> Self
         soothe - using items from his just in case box
       </div>
@@ -137,8 +144,8 @@
         marie about it the next day
       </div>
       <div class="selectionEight">
-        <input type="checkbox" id="optnEight" onclick="goFurther()" /> Keep
-        texting until she replied
+        <input type="checkbox" id="optnEight" onclick="goFurther()" />
+        Keep texting until she replied
         <input type="checkbox" id="lineEight" onclick="goFurther()" /> Told
         himself if he had a negative thought it was only a thought and not real
       </div>

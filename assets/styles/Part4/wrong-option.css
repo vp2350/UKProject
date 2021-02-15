@@ -83,14 +83,14 @@
 @media (min-width: 600px) {
   /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */
 }
-
-@media (min-width: 1271px) {
+@media (min-width: 768px) {
+  /* tablet, landscape iPad, lo-res laptops ands desktops */
   .programAdvance {
     /* Programme Advance */
     position: absolute;
     width: 792.11px;
     height: 56.24px;
-    left: 302px;
+    left: 262px;
     top: 110px;
 
     font-family: Now;
@@ -106,14 +106,186 @@
     position: absolute;
     width: 800px;
     height: 52.87px;
-    left: 302px;
+    left: 262px;
     top: 228px;
 
     font-family: Bitter;
     font-style: normal;
     font-weight: normal;
     font-size: 32.9498px;
-    line-height: 44px;
+    line-height: 30px;
+
+    color: #000000;
+  }
+  .sessionName {
+    /* Session Two */
+    position: absolute;
+    width: 475.23px;
+    height: 52.87px;
+    left: 202px;
+    top: 1003.13px;
+
+    font-family: Now;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 57px;
+    line-height: 39px;
+
+    color: #000000;
+  }
+
+  .partOne {
+    /* Managing Myself */
+    position: absolute;
+    width: 800px;
+    height: 52.87px;
+    left: 202px;
+    top: 678px;
+
+    font-family: Bitter;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 50.1001px;
+    line-height: 47px;
+
+    color: #000000;
+  }
+
+  .content {
+    position: absolute;
+    width: 829.04px;
+    height: 360.19px;
+    left: 202px;
+    top: 878.98px;
+
+    background: rgba(196, 196, 196, 0.2);
+    border-radius: 10px;
+    overflow: scroll;
+  }
+
+  content::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  }
+
+  .content::-webkit-scrollbar {
+    width: 12px;
+  }
+
+  .content::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+  }
+
+  .content p {
+    position: absolute;
+    width: 697.71px;
+    height: 117.03px;
+    left: 25px;
+    top: 6.97px;
+
+    font-family: Now Alt;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 160%;
+    /* or 38px */
+    text-shadow: 1px 0 0 currentColor;
+
+    color: #000000;
+  }
+  .avatar {
+    /* Avatar Mouth Shape Chart_Avatar Final Design 1 */
+
+    position: absolute;
+    width: 1224.75px;
+    height: 1056.13px;
+    left: 720px;
+    top: 770px;
+
+    background: url(Avatar Mouth Shape Chart_Avatar Final Design.jpg);
+    mix-blend-mode: darken;
+  }
+
+  .avatar img {
+    width: 100%;
+    height: auto;
+  }
+  .start-btn {
+    position: absolute;
+    width: 309.78px;
+    height: 97.52px;
+    left: 202px;
+    top: 1578.89px;
+
+    background: #5c8f96;
+    border-radius: 2.28013px;
+  }
+
+  .startSession {
+    position: absolute;
+    width: 209.78px;
+    height: 28.04px;
+    left: 50px;
+    top: 18px;
+
+    font-family: Now;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 45px;
+    line-height: 141.69%;
+    /* or 37px */
+
+    text-align: center;
+    letter-spacing: 0.095em;
+
+    color: #ffffff;
+  }
+}
+/* Added by Vivek */
+@media (min-width: 1271px) {
+  .testfive {
+    position: absolute;
+    width: 547px;
+    height: 74.64px;
+    left: 49.46px;
+    top: 1.24px;
+    font-family: Now Alt;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 169%;
+    color: #000000;
+    text-shadow: 1px 0 0 black;
+  }
+  .programAdvance {
+    /* Programme Advance */
+    position: absolute;
+    width: 792.11px;
+    height: 56.24px;
+    left: 152px;
+    top: 27px;
+
+    font-family: Now;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 30px;
+    line-height: 62px;
+
+    color: #000000;
+  }
+  .partOneCheckIn {
+    /* Managing Myself */
+    position: absolute;
+    width: 800px;
+    height: 52.87px;
+    left: 152px;
+    top: 105px;
+
+    font-family: Bitter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18.9498px;
+    line-height: 30px;
 
     color: #000000;
   }
@@ -137,30 +309,30 @@
   .partOne {
     /* Managing Myself */
     position: absolute;
-    width: 805px;
+    width: 800px;
     height: 52.87px;
-    left: 202px;
-    top: 400px;
+    left: 102px;
+    top: 198px;
 
     font-family: Bitter;
     font-style: normal;
     font-weight: bold;
-    font-size: 60.1001px;
+    font-size: 30.1001px;
     line-height: 47px;
 
     color: #000000;
   }
 
-  .content {
+  .contentfive {
     position: absolute;
-    width: 1029.04px;
-    height: 360.19px;
-    left: 202px;
-    top: 618.98px;
+    width: 598px;
+    height: 116px;
+    left: 102px;
+    top: 278.98px;
 
     background: rgba(196, 196, 196, 0.2);
     border-radius: 10px;
-    overflow: scroll;
+    overflow-y: scroll;
   }
 
   content::-webkit-scrollbar-track {
@@ -178,7 +350,7 @@
 
   .content p {
     position: absolute;
-    width: 929.71px;
+    width: 429.71px;
     height: 117.03px;
     left: 25px;
     top: 6.97px;
@@ -186,7 +358,7 @@
     font-family: Now Alt;
     font-style: normal;
     font-weight: normal;
-    font-size: 30px;
+    font-size: 15px;
     line-height: 160%;
     /* or 38px */
     text-shadow: 1px 0 0 currentColor;
@@ -196,14 +368,14 @@
 
   #main {
     position: absolute;
-    top: 160px;
-    left: 180px;
+    top: 60px;
+    left: 80px;
     transition: margin-left 0.5s; /* If you want a transition effect */
     padding: 20px;
   }
   /* The button used to open the sidebar */
   .openbtn {
-    font-size: 40px;
+    font-size: 20px;
     cursor: pointer;
     background-color: #111;
     color: white;
@@ -214,41 +386,40 @@
     /* Avatar Mouth Shape Chart_Avatar Final Design 1 */
 
     position: absolute;
-    width: 1100px;
+    width: 100%;
     height: auto;
-    left: 1258px;
-    top: 320px;
-
+    left: 0px;
+    top: 130px;
     background: url(Avatar Mouth Shape Chart_Avatar Final Design.jpg);
     mix-blend-mode: darken;
   }
 
   .avatar img {
     width: 100%;
-    height: 1280px;
+    height: 750px;
   }
   .start-btn {
     position: absolute;
-    width: 299.78px;
-    height: 117.52px;
-    left: 202px;
-    top: 1375px;
+    width: 199.78px;
+    height: 87.52px;
+    left: 102px;
+    top: 578.89px;
 
     background: #5c8f96;
     border-radius: 2.28013px;
   }
 
-  .nxtImageFocus {
+  .startSession {
     position: absolute;
     width: 209.78px;
     height: 30.04px;
-    left: 36px;
-    top: 26px;
+    left: -8px;
+    top: 24px;
 
     font-family: Now;
     font-style: normal;
     font-weight: normal;
-    font-size: 45px;
+    font-size: 25px;
     line-height: 141.69%;
     /* or 37px */
 
@@ -257,84 +428,8 @@
 
     color: #ffffff;
   }
-  .question {
-    position: absolute;
-    width: 1242.37px;
-    height: 34.94px;
-    left: 202.29px;
-    top: 359.44px;
-    font-family: Now Alt;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 36px;
-    line-height: 140%;
-    color: #000000;
-    text-shadow: 1px 0 0 black;
-  }
-  .userAnswer {
-    position: absolute;
-    width: 950px;
-    height: 306.95px;
-    left: 200px;
-    top: 685.4px;
-    background: #ffffff;
-    border: 1.87834px solid #383d41;
-    box-sizing: border-box;
-    border-radius: 3.75667px;
-  }
-
-  /* Copied from previous version */
-  .row {
-    display: flex;
-    margin-top: 0px;
-  }
-
-  .column {
-    flex: 33.33%;
-    padding: 5px;
-    margin-top: 444px;
-  }
-  form {
-    display: flex;
-    flex-direction: row;
-  }
-  .option-one {
-    margin-left: 5.88px;
-  }
-  .option-two {
-    margin-left: 5px;
-  }
-  .option-three {
-    margin-left: 5px;
-  }
-  .nxtImageFocus {
-    margin-top: 892px;
-    margin-left: 96px;
-    width: 219.78px;
-    height: 65.52px;
-    background: #5c8f96;
-    color: white;
-    border: none;
-  }
-  #optn1 {
-    border: 4.71854px solid #5c8f96;
-    width: 21.99px;
-    height: 21.99px;
-    margin-left: 184.88px;
-  }
-  #optn2 {
-    border: 4.71854px solid #5c8f96;
-    width: 21.99px;
-    height: 21.99px;
-    margin-left: 390px;
-  }
-  #optn3 {
-    border: 4.71854px solid #5c8f96;
-    width: 21.99px;
-    height: 21.99px;
-    margin-left: 420px;
-  }
 }
+
 @media (min-width: 2000px) {
   .programAdvance {
     /* Programme Advance */
@@ -342,7 +437,7 @@
     width: 792.11px;
     height: 56.24px;
     left: 302px;
-    top: 110px;
+    top: 80px;
 
     font-family: Now;
     font-style: normal;
@@ -358,13 +453,13 @@
     width: 800px;
     height: 52.87px;
     left: 302px;
-    top: 228px;
+    top: 208px;
 
     font-family: Bitter;
     font-style: normal;
     font-weight: normal;
     font-size: 32.9498px;
-    line-height: 44px;
+    line-height: 30px;
 
     color: #000000;
   }
@@ -374,12 +469,12 @@
     width: 475.23px;
     height: 52.87px;
     left: 202px;
-    top: 703.13px;
+    top: 603.13px;
 
     font-family: Now;
     font-style: normal;
     font-weight: normal;
-    font-size: 57px;
+    font-size: 47px;
     line-height: 39px;
 
     color: #000000;
@@ -388,26 +483,26 @@
   .partOne {
     /* Managing Myself */
     position: absolute;
-    width: 805px;
+    width: 800px;
     height: 52.87px;
     left: 202px;
-    top: 400px;
+    top: 338px;
 
     font-family: Bitter;
     font-style: normal;
     font-weight: bold;
-    font-size: 60.1001px;
+    font-size: 50.1001px;
     line-height: 47px;
 
     color: #000000;
   }
 
-  .content {
+  .contentfive {
     position: absolute;
-    width: 1029.04px;
-    height: 360.19px;
+    width: 729px;
+    height: 136px;
     left: 202px;
-    top: 618.98px;
+    top: 428.98px;
 
     background: rgba(196, 196, 196, 0.2);
     border-radius: 10px;
@@ -447,7 +542,7 @@
 
   #main {
     position: absolute;
-    top: 160px;
+    top: 130px;
     left: 180px;
     transition: margin-left 0.5s; /* If you want a transition effect */
     padding: 20px;
@@ -465,31 +560,30 @@
     /* Avatar Mouth Shape Chart_Avatar Final Design 1 */
 
     position: absolute;
-    width: 1100px;
+    width: 100%;
     height: auto;
-    left: 1258px;
-    top: 320px;
-
+    left: 0px;
+    top: 238px;
     background: url(Avatar Mouth Shape Chart_Avatar Final Design.jpg);
     mix-blend-mode: darken;
   }
 
   .avatar img {
     width: 100%;
-    height: 1280px;
+    height: 1000px;
   }
   .start-btn {
     position: absolute;
     width: 299.78px;
     height: 117.52px;
     left: 202px;
-    top: 1375px;
+    top: 978.89px;
 
     background: #5c8f96;
     border-radius: 2.28013px;
   }
 
-  .nxtImageFocus {
+  .startSession {
     position: absolute;
     width: 209.78px;
     height: 30.04px;
@@ -508,81 +602,18 @@
 
     color: #ffffff;
   }
-  .question {
+  .testfive {
     position: absolute;
-    width: 1242.37px;
-    height: 34.94px;
-    left: 202.29px;
-    top: 359.44px;
+    width: 547px;
+    height: 74.64px;
+    left: 49.46px;
+    top: 1.24px;
     font-family: Now Alt;
     font-style: normal;
     font-weight: normal;
-    font-size: 36px;
-    line-height: 140%;
+    font-size: 24px;
+    line-height: 169%;
     color: #000000;
     text-shadow: 1px 0 0 black;
-  }
-  .userAnswer {
-    position: absolute;
-    width: 950px;
-    height: 306.95px;
-    left: 200px;
-    top: 685.4px;
-    background: #ffffff;
-    border: 1.87834px solid #383d41;
-    box-sizing: border-box;
-    border-radius: 3.75667px;
-  }
-
-  /* Copied from previous version */
-  .row {
-    display: flex;
-    margin-top: 16px;
-  }
-
-  .column {
-    flex: 33.33%;
-    padding: 5px;
-    margin-top: 444px;
-  }
-  form {
-    display: flex;
-    flex-direction: row;
-  }
-  .option-one {
-    margin-left: 5px;
-  }
-  .option-two {
-    margin-left: 5px;
-  }
-  .option-three {
-    margin-left: 5px;
-  }
-  .nxtImageFocus {
-    margin-top: 980px;
-    margin-left: 96px;
-    width: 309.78px;
-    height: 97.52px;
-    background: #5c8f96;
-    color: white;
-    border: none;
-  }
-  #optn1 {
-    border: 4.71854px solid #5c8f96;
-    width: 21.99px;
-    height: 21.99px;
-    margin-left: 305.88px;
-  }
-  #optn2 {
-    border: 4.71854px solid #5c8f96;
-    width: 21.99px;
-    height: 21.99px;
-    margin-left: 600px;
-  }
-  #optn3 {
-    border: 4.71854px solid #5c8f96;
-    width: 21.99px;
-    height: 21.99px;
-    margin-left: 670px;
   }
 }

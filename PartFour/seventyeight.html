@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title></title>
+    <meta name="description" content="" />
+    <meta
+      name="viewport"
+      content="width=device-width, height=device-height initial-scale=1"
+    />
+    <link
+      rel="stylesheet"
+      media="screen"
+      href="https://fontlibrary.org/face/now-alt"
+      type="text/css"
+    />
+    <link rel="stylesheet" href="./assets/styles/sessionTwo.css" />
+    <link rel="stylesheet" href="../assets/styles/Part4/seventyeight.css" />
+    <script src="../assets/scripts/quiz.js"></script>
+  </head>
+  <body>
+    <div id="mySidebar" class="sidebar">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+        >&times;</a
+      >
+      <a href="#">About</a>
+      <a href="#">Services</a>
+      <a href="#">Clients</a>
+      <a href="#">Contact</a>
+    </div>
+
+    <div id="main">
+      <button class="openbtn" onclick="openNav()">&#9776;</button>
+    </div>
+    <div class="rectangle"></div>
+    <div id="mySidebar" class="sidebar">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+        >&times;</a
+      >
+      <a href="#">Home</a>
+      <a href="#">Topics</a>
+      <a href="#">Preferences</a>
+      <a href="#">Sign Out</a>
+    </div>
+
+    <!--[if lt IE 7]>
+      <p class="browsehappy">
+        You are using an <strong>outdated</strong> browser. Please
+        <a href="#">upgrade your browser</a> to improve your experience.
+      </p>
+    <![endif]-->
+    <div class="Session-two">
+      <div class="programAdvance">
+        <h3>Programme Advance</h3>
+      </div>
+      <div class="partOneCheckIn">Part IV: Todays Session</div>
+      <div id="desc">
+        SITUATION 2 <br />
+        <p class="situationOne">
+          <strong>She is drunk or under the influence of drugs</strong>
+        </p>
+        <p class="cSituation">Difficult/challenging situation</p>
+        <p class="pGo">Partner is using without me</p>
+        <p class="feelQuestion">How do I feel?</p>
+        <p class="feel">Angry/disappointed/sad</p>
+
+        <p class="think">What do I think?</p>
+        <p class="backOff">
+          She used our money to buy those drugs/I should get my share
+        </p>
+
+        <p class="behave">How do I behave</p>
+        <p class="lash">
+          Demand to know where she got the money / call her name
+        </p>
+      </div>
+
+      <!-- Quiz -->
+
+      <div class="quizOne">
+        <p class="question">What could I have done?</p>
+
+        <input class="answer" type="radio" name="q1" value="1" />
+        <label id="correctString1"
+          >Discuss with her when she is not under the influence</label
+        >
+        <br />
+        <input
+          class="answer"
+          type="radio"
+          name="q1"
+          value="0"
+          style="position: absolute; margin-top: 30px"
+        />
+        <label id="correctString2">Option 2</label>
+        <br />
+        <input
+          class="answer"
+          type="radio"
+          name="q1"
+          value="0"
+          style="position: absolute; margin-top: 43px"
+        />
+        <label id="correctString3">Option 3</label>
+        <br />
+        <input
+          class="answer"
+          type="radio"
+          name="q1"
+          value="0"
+          style="position: absolute; margin-top: 55px"
+          ;
+        />
+        <label id="correctString4">Option 4</label>
+      </div>
+
+      <div class="submitter">
+        <input
+          class="quizSubmit"
+          id="submitButton"
+          onClick="submitQuiz()"
+          type="submit"
+          value="SUBMIT"
+        />
+      </div>
+      <!--show only wrong answers on submit-->
+      <div class="quizAnswers" id="correctAnswer1"></div>
+      <!--show score upon submit-->
+      <div>
+        <h2 class="quizScore" id="userScore"></h2>
+      </div>
+
+      <button
+        class="start-btn"
+        onclick="window.location.href='./seventynine.html'"
+      >
+        <span class="startSession">NEXT</span>
+      </button>
+      <!-- <a href="test.html" class="button">NEXT</div> -->
+    </div>
+  </body>
+</html>
