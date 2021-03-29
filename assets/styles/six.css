@@ -242,6 +242,25 @@
   }
 }
 @media (min-width: 1271px) {
+  .fa {
+    color: #828282;
+  }
+  .go-back {
+    margin-top: 148px;
+    text-decoration: none;
+    /* margin-left: 40px; */
+    font-size: 26px;
+    font-weight: 600;
+    margin-left: 100px;
+  }
+  .go-back a {
+    color: #828282;
+    text-decoration: none;
+    margin-left: 5px;
+    font-family: Open Sans;
+    font-style: normal;
+  }
+
   .programAdvance {
     /* Programme Advance */
     position: absolute;
@@ -310,11 +329,10 @@
 
   .content {
     position: absolute;
-    width: 529.04px;
+    width: 600px;
     height: 180.19px;
     left: 102px;
     top: 323.98px;
-
     background: rgba(196, 196, 196, 0.2);
     border-radius: 10px;
     overflow-y: scroll;
@@ -335,19 +353,16 @@
 
   .content p {
     position: absolute;
-    width: 429.71px;
+    width: 516px;
     height: 117.03px;
     left: 25px;
-    top: 6.97px;
-
-    font-family: Now Alt;
+    top: -20.03px;
+    font-family: Open Sans;
     font-style: normal;
     font-weight: normal;
-    font-size: 15px;
+    font-size: 24px;
     line-height: 160%;
-    /* or 38px */
     text-shadow: 0px 0 0 currentColor;
-
     color: #000000;
   }
 
@@ -417,6 +432,14 @@
 }
 
 @media (min-width: 2000px) {
+  .go-back {
+    margin-top: 259px;
+    text-decoration: none;
+    /* margin-left: 40px; */
+    font-size: 39px;
+    font-weight: 600;
+    margin-left: 217px;
+  }
   .programAdvance {
     /* Programme Advance */
     position: absolute;
@@ -515,7 +538,7 @@
     left: 25px;
     top: 6.97px;
 
-    font-family: Now Alt;
+    font-family: Open Sans;
     font-style: normal;
     font-weight: normal;
     font-size: 30px;

@@ -254,6 +254,24 @@
     }
 }
 @media (min-width: 1271px) {
+    .fa {
+        color: #828282;
+      }
+      .go-back {
+        margin-top: 148px;
+        text-decoration: none;
+        /* margin-left: 40px; */
+        font-size: 26px;
+        font-weight: 600;
+        margin-left: 100px;
+      }
+      .go-back a {
+        color: #828282;
+        text-decoration: none;
+        margin-left: 5px;
+        font-family: Open Sans;
+        font-style: normal;
+      }
 .programAdvance {
         /* Programme Advance */
         position: absolute;
@@ -450,13 +468,21 @@
     
 }
 @media (min-width: 2000px) {
+    .go-back {
+        margin-top: 259px;
+        text-decoration: none;
+        /* margin-left: 40px; */
+        font-size: 39px;
+        font-weight: 600;
+        margin-left: 217px;
+      }
     .programAdvance {
         /* Programme Advance */
         position: absolute;
         width: 792.11px;
         height: 56.24px;
         left: 302px;
-        top: 110px;
+        top: 66px;
 
         font-family: Now;
         font-style: normal;
@@ -473,7 +499,7 @@
         width: 800px;
         height: 52.87px;
         left: 302px;
-        top: 228px;
+        top: 191px;
 
         font-family: Bitter;
         font-style: normal;
@@ -580,6 +606,7 @@
       color: white;
       padding: 10px 15px;
       border: none;
+      margin-top: -44px;
     }
     .avatar{
         /* Avatar Mouth Shape Chart_Avatar Final Design 1 */

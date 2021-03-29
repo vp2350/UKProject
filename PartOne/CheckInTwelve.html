@@ -9,93 +9,104 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title></title>
     <meta name="description" content="" />
-    <meta name="viewport" content="width=device-width, height=device-height initial-scale=1" />
+    <meta
+      name="viewport"
+      content="width=device-width, height=device-height initial-scale=1"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <link rel="stylesheet" href="../assets/styles/CheckInTwelve.css" />
     <script>
-        window.onload = e => {
-            console.log("1234");
-            selectNumberOne.onclick = function(e){
-                var elems = document.querySelectorAll(".selected");
+      window.onload = (e) => {
+        console.log('1234');
+        selectNumberOne.onclick = function (e) {
+          var elems = document.querySelectorAll('.selected');
 
-                [].forEach.call(elems, function(el) {
-                    el.classList.remove("selected");
-                });
-                selectNumberOne.classList.add("selected");
-            }
-            selectNumberTwo.onclick = function(e){
-                var elems = document.querySelectorAll(".selected");
+          [].forEach.call(elems, function (el) {
+            el.classList.remove('selected');
+          });
+          selectNumberOne.classList.add('selected');
+        };
+        selectNumberTwo.onclick = function (e) {
+          var elems = document.querySelectorAll('.selected');
 
-                [].forEach.call(elems, function(el) {
-                    el.classList.remove("selected");
-                });
-                selectNumberTwo.classList.add("selected");
-            }
-            selectNumberThree.onclick = function(e){
-                var elems = document.querySelectorAll(".selected");
+          [].forEach.call(elems, function (el) {
+            el.classList.remove('selected');
+          });
+          selectNumberTwo.classList.add('selected');
+        };
+        selectNumberThree.onclick = function (e) {
+          var elems = document.querySelectorAll('.selected');
 
-                [].forEach.call(elems, function(el) {
-                    el.classList.remove("selected");
-                });
-                selectNumberThree.classList.add("selected");
-            }
-            selectNumberFour.onclick = function(e){
-                var elems = document.querySelectorAll(".selected");
+          [].forEach.call(elems, function (el) {
+            el.classList.remove('selected');
+          });
+          selectNumberThree.classList.add('selected');
+        };
+        selectNumberFour.onclick = function (e) {
+          var elems = document.querySelectorAll('.selected');
 
-                [].forEach.call(elems, function(el) {
-                    el.classList.remove("selected");
-                });
-                selectNumberFour.classList.add("selected");
-            }
-            selectNumberFive.onclick = function(e){
-                var elems = document.querySelectorAll(".selected");
+          [].forEach.call(elems, function (el) {
+            el.classList.remove('selected');
+          });
+          selectNumberFour.classList.add('selected');
+        };
+        selectNumberFive.onclick = function (e) {
+          var elems = document.querySelectorAll('.selected');
 
-                [].forEach.call(elems, function(el) {
-                    el.classList.remove("selected");
-                });
-                selectNumberFive.classList.add("selected");
-            }
-            selectNumberSix.onclick = function(e){
-                var elems = document.querySelectorAll(".selected");
+          [].forEach.call(elems, function (el) {
+            el.classList.remove('selected');
+          });
+          selectNumberFive.classList.add('selected');
+        };
+        selectNumberSix.onclick = function (e) {
+          var elems = document.querySelectorAll('.selected');
 
-                [].forEach.call(elems, function(el) {
-                    el.classList.remove("selected");
-                });
-                selectNumberSix.classList.add("selected");
-            }
-            selectNumberSeven.onclick = function(e){
-                var elems = document.querySelectorAll(".selected");
+          [].forEach.call(elems, function (el) {
+            el.classList.remove('selected');
+          });
+          selectNumberSix.classList.add('selected');
+        };
+        selectNumberSeven.onclick = function (e) {
+          var elems = document.querySelectorAll('.selected');
 
-                [].forEach.call(elems, function(el) {
-                    el.classList.remove("selected");
-                });
-                selectNumberSeven.classList.add("selected");
-            }
-        }
+          [].forEach.call(elems, function (el) {
+            el.classList.remove('selected');
+          });
+          selectNumberSeven.classList.add('selected');
+        };
+      };
     </script>
     <!-- <script src="./assets/scripts/fparttwo.js"></script> -->
   </head>
   <body>
-   <div id="mySidebar" class="sidebar">
-          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-          <a href="#">About</a>
-          <a href="#">Services</a>
-          <a href="#">Clients</a>
-          <a href="#">Contact</a>
-        </div>
+    <div id="mySidebar" class="sidebar">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+        >&times;</a
+      >
+      <a href="#">About</a>
+      <a href="#">Services</a>
+      <a href="#">Clients</a>
+      <a href="#">Contact</a>
+    </div>
 
-        <div id="main">
-          <button class="openbtn" onclick="openNav()">&#9776;</button>
-        </div>
+    <div id="main">
+      <button class="openbtn" onclick="openNav()">&#9776;</button>
+    </div>
     <div class="rectangle"></div>
     <div id="mySidebar" class="sidebar">
-      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+        >&times;</a
+      >
       <a href="#">Home</a>
       <a href="#">Topics</a>
       <a href="#">Preferences</a>
       <a href="#">Sign Out</a>
     </div>
 
-        <!--[if lt IE 7]>
+    <!--[if lt IE 7]>
       <p class="browsehappy">
         You are using an <strong>outdated</strong> browser. Please
         <a href="#">upgrade your browser</a> to improve your experience.
@@ -105,8 +116,10 @@
       <div class="programAdvance">
         <h3>Programme Advance</h3>
       </div>
-      <div class="partOneCheckIn">
-          Part I: Check In
+      <div class="partOneCheckIn">Part I: Check In</div>
+      <div class="go-back">
+        <i class="fa fa-long-arrow-left"></i
+        ><a href="../PartOne/CheckInEleven.html">Back</a>
       </div>
       <div class="pastWeek">In the past week, how many days have you:</div>
       <div class="question">been aggressive with your partner</div>
@@ -121,9 +134,12 @@
       <div class="avatar">
         <img class="avatarone" src="../images/Avatar.jpg" />
       </div>
-      <button class = "start-btn" onclick="window.location.href='CheckInThirteen.html'">  
-                <span class="startSession">NEXT</span>
-            </button>
+      <button
+        class="start-btn"
+        onclick="window.location.href='CheckInThirteen.html'"
+      >
+        <span class="startSession">NEXT</span>
+      </button>
       <!-- <a href="test.html" class="button">NEXT</div> -->
     </div>
   </body>

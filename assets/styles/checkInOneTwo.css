@@ -242,6 +242,24 @@
   }
 }
 @media (min-width: 1271px) {
+  .fa {
+    color: #828282;
+  }
+  .go-back {
+    margin-top: 148px;
+    text-decoration: none;
+    /* margin-left: 40px; */
+    font-size: 26px;
+    font-weight: 600;
+    margin-left: 100px;
+  }
+  .go-back a {
+    color: #828282;
+    text-decoration: none;
+    margin-left: 5px;
+    font-family: Open Sans;
+    font-style: normal;
+  }
   .programAdvance {
     /* Programme Advance */
     position: absolute;
@@ -415,6 +433,24 @@
 }
 
 @media (min-width: 2000px) {
+  /* .fa {
+    color: #828282;
+  } */
+  .go-back {
+    margin-top: 259px;
+    text-decoration: none;
+    /* margin-left: 40px; */
+    font-size: 39px;
+    font-weight: 600;
+    margin-left: 217px;
+  }
+  /* .go-back a {
+    color: #828282;
+    text-decoration: none;
+    margin-left: 5px;
+    font-family: Open Sans;
+    font-style: normal;
+  } */
   .programAdvance {
     /* Programme Advance */
     position: absolute;

@@ -58,8 +58,8 @@
 /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
 #main {
   position: absolute;
-  top: 160px;
-  left: 160px;
+  top: 120px;
+  left: 100px;
   transition: margin-left 0.5s; /* If you want a transition effect */
   padding: 20px;
 }
@@ -84,30 +84,21 @@
   /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */
 }
 @media (min-width: 768px) {
-  /* tablet, landscape iPad, lo-res laptops ands desktops */
-  .programAdvance {
-    /* Programme Advance */
+  .backgroundMan {
     position: absolute;
-    width: 792.11px;
-    height: 56.24px;
-    left: 262px;
-    top: 110px;
-
-    font-family: Now;
-    font-style: normal;
-    font-weight: 900;
-    font-size: 50px;
-    line-height: 62px;
-
-    color: #000000;
+    width: 160%;
+    height: 1000.73px;
+    left: -50px;
+    top: 430.27px;
   }
+
   .partOneCheckIn {
     /* Managing Myself */
     position: absolute;
     width: 800px;
     height: 52.87px;
-    left: 262px;
-    top: 228px;
+    left: 202px;
+    top: 188px;
 
     font-family: Bitter;
     font-style: normal;
@@ -117,6 +108,25 @@
 
     color: #000000;
   }
+
+  /* tablet, landscape iPad, lo-res laptops ands desktops */
+  .programAdvance {
+    /* Programme Advance */
+    position: absolute;
+    width: 792.11px;
+    height: 56.24px;
+    left: 202px;
+    top: 80px;
+
+    font-family: Now;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 62px;
+
+    color: #000000;
+  }
+
   .sessionName {
     /* Session Two */
     position: absolute;
@@ -153,46 +163,30 @@
 
   .content {
     position: absolute;
-    width: 829.04px;
-    height: 360.19px;
-    left: 202px;
-    top: 878.98px;
-
-    background: rgba(196, 196, 196, 0.2);
-    border-radius: 10px;
-    overflow: scroll;
+    width: 825.09px;
+    height: 40.37px;
+    left: 125.29px;
+    top: 546.48px;
   }
 
-  content::-webkit-scrollbar-track {
-    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  .selectNumber {
+    display: flex;
+    border: 4.71854px solid #5c8f96;
+    box-sizing: border-box;
+    border-radius: 3.5208px;
+
+    font-size: 40px;
   }
 
-  .content::-webkit-scrollbar {
-    width: 12px;
+  .selectNumber {
+    width: 50.37px;
+    height: 50.37px;
+
+    border: 4.71854px solid #5c8f96;
+    box-sizing: border-box;
+    border-radius: 3.5208px;
   }
 
-  .content::-webkit-scrollbar-thumb {
-    border-radius: 10px;
-    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
-  }
-
-  .content p {
-    position: absolute;
-    width: 697.71px;
-    height: 117.03px;
-    left: 25px;
-    top: 6.97px;
-
-    font-family: Now Alt;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 30px;
-    line-height: 160%;
-    /* or 38px */
-    text-shadow: 1px 0 0 currentColor;
-
-    color: #000000;
-  }
   .avatar {
     /* Avatar Mouth Shape Chart_Avatar Final Design 1 */
 
@@ -215,7 +209,7 @@
     width: 309.78px;
     height: 97.52px;
     left: 202px;
-    top: 1578.89px;
+    top: 1278.89px;
 
     background: #5c8f96;
     border-radius: 2.28013px;
@@ -242,6 +236,24 @@
   }
 }
 @media (min-width: 1271px) {
+  .fa {
+    color: #828282;
+  }
+  .go-back {
+    margin-top: 148px;
+    text-decoration: none;
+    /* margin-left: 40px; */
+    font-size: 26px;
+    font-weight: 600;
+    margin-left: 100px;
+  }
+  .go-back a {
+    color: #828282;
+    text-decoration: none;
+    margin-left: 5px;
+    font-family: Open Sans;
+    font-style: normal;
+  }
   .programAdvance {
     /* Programme Advance */
     position: absolute;
@@ -310,10 +322,11 @@
 
   .content {
     position: absolute;
-    width: 587.04px;
+    width: 529.04px;
     height: 180.19px;
-    left: 66px;
+    left: 102px;
     top: 278.98px;
+
     background: rgba(196, 196, 196, 0.2);
     border-radius: 10px;
     overflow-y: scroll;
@@ -334,16 +347,19 @@
 
   .content p {
     position: absolute;
-    width: 504.71px;
+    width: 429.71px;
     height: 117.03px;
-    left: 21px;
+    left: 25px;
     top: 6.97px;
+
     font-family: Now Alt;
     font-style: normal;
     font-weight: normal;
-    font-size: 24px;
+    font-size: 15px;
     line-height: 160%;
+    /* or 38px */
     text-shadow: 1px 0 0 currentColor;
+
     color: #000000;
   }
 
@@ -410,13 +426,160 @@
 
     color: #ffffff;
   }
-  .avatar video {
-    height: 500px;
-    width: 600px;
-    margin-top: 0px;
+  .content {
+    position: absolute;
+    width: 825.09px;
+    height: 40.37px;
+    left: 202.29px;
+    top: 246.48px;
+  }
+
+  #selectNumberOne {
+    position: absolute;
+    left: 102px;
+    top: 300px;
+    width: 86.37px;
+    height: 86.37px;
+    background: #318bf4;
+  }
+
+  #selectNumberOneText {
+    position: absolute;
+    left: 123px;
+    top: 400px;
+    font-size: 18px;
+    width: 58px;
+    color: #919191;
+  }
+
+  #selectNumberOne img {
+    width: 80.37px;
+    height: 80.37px;
+  }
+
+  #selectNumberTwo {
+    position: absolute;
+    left: 242px;
+    top: 300px;
+    width: 86.37px;
+    height: 86.37px;
+    background: #68da32;
+  }
+
+  #selectNumberTwoText {
+    position: absolute;
+    left: 255px;
+    top: 400px;
+    font-size: 18px;
+    width: 58px;
+    color: #919191;
+  }
+
+  #selectNumberTwo img {
+    width: 80.37px;
+    height: 80.37px;
+  }
+
+  #selectNumberThree {
+    position: absolute;
+    left: 382px;
+    top: 300px;
+    width: 86.37px;
+    height: 86.37px;
+
+    background: #efd02c;
+  }
+
+  #selectNumberThreeText {
+    position: absolute;
+    left: 391px;
+    top: 400px;
+    font-size: 18px;
+    width: 58px;
+    color: #919191;
+  }
+
+  #selectNumberThree img {
+    width: 80.37px;
+    height: 80.37px;
+  }
+
+  #selectNumberFour {
+    position: absolute;
+    left: 522px;
+    top: 300px;
+    width: 86.37px;
+    height: 86.37px;
+
+    background: #ef432c;
+  }
+
+  #selectNumberFourText {
+    position: absolute;
+    left: 534px;
+    top: 400px;
+    font-size: 18px;
+    width: 58px;
+    color: #919191;
+  }
+
+  #selectNumberFour img {
+    width: 80.37px;
+    height: 80.37px;
+  }
+
+  #selectNumberFive {
+    position: absolute;
+    left: 662px;
+    top: 300px;
+    width: 86.37px;
+    height: 86.37px;
+    z-index: 1000;
+  }
+
+  #selectNumberFiveText {
+    position: absolute;
+    left: 642px;
+    top: 400px;
+    font-size: 30px;
+  }
+
+  #selectNumberFive img {
+    width: 80.37px;
+    height: 80.37px;
+  }
+
+  .selected {
+    background-color: #f5f5f5;
+
+    border: 2.71854px solid #5c8f96;
+    box-sizing: border-box;
+    border-radius: 3.5208px;
+  }
+
+  .clickEmoji {
+    position: absolute;
+    width: 1242.37px;
+    height: 34.94px;
+    left: 102.29px;
+    top: 238.44px;
+    font-family: Now Alt;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 140%;
+    color: #000000;
   }
 }
 @media (min-width: 2000px) {
+  .go-back {
+    margin-top: 270px;
+    text-decoration: none;
+    /* margin-left: 40px; */
+    font-size: 39px;
+    font-weight: 600;
+    margin-left: 217px;
+  }
   .programAdvance {
     /* Programme Advance */
     position: absolute;
@@ -588,5 +751,152 @@
     letter-spacing: 0.095em;
 
     color: #ffffff;
+  }
+
+  .content {
+    position: absolute;
+    width: 825.09px;
+    height: 40.37px;
+    left: 202.29px;
+    top: 546.48px;
+  }
+
+  #selectNumberOne {
+    position: absolute;
+    left: 202px;
+    top: 500px;
+    width: 120.37px;
+    height: 120.37px;
+
+    background: #318bf4;
+  }
+
+  #selectNumberOneText {
+    position: absolute;
+    left: 231px;
+    top: 650px;
+    font-size: 32px;
+    color: #919191;
+  }
+
+  #selectNumberOne img {
+    width: 115.37px;
+    height: 115.37px;
+  }
+
+  #selectNumberTwo {
+    position: absolute;
+    left: 372px;
+    top: 500px;
+    width: 120.37px;
+    height: 120.37px;
+
+    background: #68da32;
+  }
+
+  #selectNumberTwoText {
+    position: absolute;
+    left: 386px;
+    top: 650px;
+    font-size: 32px;
+    color: #919191;
+  }
+
+  #selectNumberTwo img {
+    width: 115.37px;
+    height: 115.37px;
+  }
+
+  #selectNumberThree {
+    position: absolute;
+    left: 542px;
+    top: 500px;
+    width: 120.37px;
+    height: 120.37px;
+
+    background: #efd02c;
+  }
+
+  #selectNumberThreeText {
+    position: absolute;
+    left: 547px;
+    top: 650px;
+    font-size: 32px;
+    color: #919191;
+  }
+
+  #selectNumberThree img {
+    width: 115.37px;
+    height: 115.37px;
+  }
+
+  #selectNumberFour {
+    position: absolute;
+    left: 712px;
+    top: 500px;
+    width: 120.37px;
+    height: 120.37px;
+
+    background: #ef432c;
+  }
+
+  #selectNumberFourText {
+    position: absolute;
+    left: 720px;
+    top: 650px;
+    font-size: 32px;
+    color: #919191;
+  }
+
+  #selectNumberFour img {
+    width: 115.37px;
+    height: 115.37px;
+  }
+
+  #selectNumberFive {
+    position: absolute;
+    left: 882px;
+    top: 500px;
+    width: 120.37px;
+    height: 120.37px;
+
+    background: #ef432c;
+  }
+
+  #selectNumberFiveText {
+    position: absolute;
+    left: 862px;
+    top: 650px;
+    font-size: 40px;
+  }
+
+  #selectNumberFive img {
+    width: 115.37px;
+    height: 115.37px;
+  }
+
+  .selected {
+    background-color: #f5f5f5;
+
+    border: 4.71854px solid #000000;
+    box-sizing: border-box;
+    border-radius: 3.5208px;
+  }
+
+  .clickEmoji {
+    position: absolute;
+    width: 1242.37px;
+    height: 34.94px;
+    left: 202.29px;
+    top: 359.44px;
+
+    font-family: Now Alt;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 140%;
+    /* or 34px */
+
+    color: #000000;
   }
 }
