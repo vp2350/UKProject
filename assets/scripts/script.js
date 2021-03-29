@@ -1,7 +1,8 @@
 const container = document.getElementById('container');
 const text = document.getElementById('text');
 
-const totalTime = 60000;
+const totalTime;
+totalTime.setMinutes(1);
 const breatheTime = (totalTime / 5) * 2;
 const holdTime = totalTime / 5;
 
